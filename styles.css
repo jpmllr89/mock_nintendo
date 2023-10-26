@@ -5,8 +5,41 @@
     --button-background: #0b2bfb;
     --sub-text: #efefef;
     --text-color: #434242;
+    --font-family: 'Montserrat'; 
 }
 
-div{
+/* div{
     border: black solid 1px;
+} */
+body{
+    font-family: var(--font-family), sans-serif;
+    margin: 0;
+    box-sizing: border-box;
 }
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+}
+.top-nav, .navbar, .search, .navbar-inner, .navbar-inner ul{
+    display: flex;
+}
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav{
+    flex-direction: column;
+}
+.logo{
+    width: 150px;
+}
+.logo img{
+    width: 100%;
+}
+
