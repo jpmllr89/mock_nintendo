@@ -1,0 +1,12 @@
+:root{
+    --link-color: #e60012;
+    --hero-background-color: #d6f0fa;
+    --background-color: #fff;
+    --button-background: #0b2bfb;
+    --sub-text: #efefef;
+    --text-color: #434242;
+}
+
+div{
+    border: black solid 1px;
+}
