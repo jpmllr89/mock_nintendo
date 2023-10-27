@@ -1,3 +1,5 @@
+/* globals */
+
 :root{
     --link-color: #e60012;
     --hero-background-color: #d6f0fa;
@@ -23,15 +25,60 @@ li{
 a{
     text-decoration: none;
 }
+p{
+    margin: 0;
+}
 .container{
     max-width: 1200px;
 }
-.top-nav, .navbar, .search, .navbar-inner, .navbar-inner ul{
+i{
+    font-size: 28px;
+}
+.top-nav,
+.navbar, 
+.search, 
+.navbar-inner, 
+.navbar-inner ul,
+.navbar-inner ul li, 
+.dropdown{
     display: flex;
 }
+
+.search, .dropdown{
+    align-items: center;
+}
+
+/* injectables */
+.pr-50{
+    padding-right: 50px;
+}
+
+.gap-10{
+    gap: 10px
+}
+
+.ml-15{
+    margin-left: 15px;
+}
+
+.background-gray{
+    background-color: var(--sub-text);
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-spacebetween{
+    justify-content: space-between;
+}
+/* div-classes */
+
+/* top-nav navbar1 */
 .navbar{
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    height: 50px;
 }
 .top-nav{
     flex-direction: column;
@@ -42,4 +89,6 @@ a{
 .logo img{
     width: 100%;
 }
-
+input{
+    border: none;
+}
