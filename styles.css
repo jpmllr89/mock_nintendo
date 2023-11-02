@@ -31,6 +31,7 @@ p{
 }
 .container{
     max-width: 1200px;
+    margin: 0 auto;
 }
 i{
     font-size: 28px;
@@ -53,7 +54,9 @@ h2{
 .price,
 .purchaseOptions,
 .btn-1,
-.right-panel{
+.right-panel,
+.game-description,
+.game-description-item, .text-box{
     display: flex;
 }
 
@@ -139,6 +142,14 @@ h2{
 
 .col{
     flex-direction: column;
+}
+
+.pushDown{
+    transform: translateY(150px);
+}
+
+.shrink{
+    width: fit-content;
 }
 /* div-classes */
 
@@ -277,4 +288,17 @@ section.hero{
 .right-panel-reminder{
     font-size: 12px;
 }
+.game-description-item{
+    flex: 2;
+}
 
+.expand{
+    color: red;
+    display:flex;
+    align-items: center;
+}
+
+.game-description-item span{
+    font-size: 12px;
+    padding: 10px 5px;
+}
