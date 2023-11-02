@@ -65,7 +65,8 @@ h3{
 .text-box, 
 .specification-panel,
 .esrb-rating,
-.thumbnail{
+.thumbnail,
+.online{
     display: flex;
 }
 
@@ -378,3 +379,25 @@ section.hero{
     border-radius: 14px;
 }
 
+/* Online Section */
+.online{
+    background-color: var(--sub-text);
+    margin-top: 100px;
+    padding: 0 2rem;
+}
+
+.online div, .online img{
+    flex: 1;
+}
+
+.online div p{
+    font-size: 21px;
+    margin: 22px 0;
+}
+
+.online div p span, .online div p a{
+    font-size:1rem;
+}
+.online div{
+    padding: 2rem 0;
+}
