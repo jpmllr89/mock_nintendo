@@ -66,7 +66,15 @@ h3{
 .specification-panel,
 .esrb-rating,
 .thumbnail,
-.online{
+.online,
+.more-panel,
+.card-content,
+.card-content .nintendo-footer,
+.more-like-this,
+.footer-top-banner,
+.footer-link-grid div ul,
+.footer-banner-bottom,
+.footer-banner-bottom-item ul{
     display: flex;
 }
 
@@ -78,7 +86,10 @@ h3{
 .top-panel,
 .price,
 .purchaseOptions,
-.specification-list li{
+.specification-list li,
+.card-content,
+.nintendo-footer,
+.footer-top-banner{
     align-items: center;
 }
 
@@ -160,7 +171,7 @@ h3{
 }
 
 .pushDown{
-    transform: translateY(150px);
+    margin-top: 150px;
 }
 
 .shrink{
@@ -180,7 +191,8 @@ h3{
     /* justify-content: space-between; */
     height: 50px;
 }
-.top-nav, .showcase-box .box-wrapper, .thumbnail{
+.top-nav, .showcase-box .box-wrapper, .thumbnail,
+.footer-link-grid div ul{
     flex-direction: column;
 }
 .logo{
@@ -292,7 +304,7 @@ section.hero{
     padding: 10px;
 }
 
-.right-panel >span{
+span.nin-switch{
     font-size: 14px;
     border-left: var(--link-color) solid 1px;
     padding-left: 5px;
@@ -382,8 +394,9 @@ section.hero{
 /* Online Section */
 .online{
     background-color: var(--sub-text);
-    margin-top: 100px;
+    margin: 100px 0;
     padding: 0 2rem;
+    border-radius: 14px;
 }
 
 .online div, .online img{
@@ -400,4 +413,141 @@ section.hero{
 }
 .online div{
     padding: 2rem 0;
+}
+
+.more-like-this{
+    gap: 50px;
+}
+.more-panel{
+    justify-content: center;
+}
+
+.more-panel-card{
+    max-width: 16rem;
+    border-radius: 14px;
+    transition: 300ms;
+}
+
+/* .more-panel-card:hover{
+    background-color: white;
+    
+    & .more-panel-card .card-content h3{
+        color: var(--link)
+    }
+
+    & .img-wrapper{
+        margin-bottom: 10px;
+    }
+} */
+
+.more-panel-card .img-wrapper{
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.more-panel-card .card-content{
+    padding: 1rem;
+    border-bottom:var(--sub-text) solid 1px;
+    border-left:var(--sub-text) solid 1px;
+    border-right:var(--sub-text) solid 1px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+}
+
+.card-content .title{
+    transition: 300ms;
+}
+
+.card-content .title:hover{
+    padding-top: 10px;
+    color: red;
+}
+
+.card-content .title span{
+    font-size: 12px;
+}
+
+.card-content .price{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.nintendo-footer i{
+    transition: 300ms;
+}
+
+.nintendo-footer i:hover{
+    color: var(--link-color);
+}
+
+.disclaimer p{
+    color: #646668;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+/* footer section */
+footer{
+    margin-top: 50px;
+}
+.footer-top-banner{
+    background-color: var(--link-color);
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.footer-social-media{
+    display:grid;
+    grid-template-columns: repeat(4, 60px);
+}
+.footer-social-media i{
+    font-size: 2rem;
+}
+
+.footer-link-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.footer-link-grid div{
+    border-left: rgb(218, 218, 218) solid 1px;
+    padding-left: 30px;
+}
+
+.footer-link-grid div ul{
+    gap: 10px;
+}
+
+.footer-link-grid div ul li a{
+    color: var(--link-color);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-link-grid div h3{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.footer-banner-bottom{
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.footer-banner-bottom-item{
+    flex: 1;
+    font-size: 12px;
+}
+
+.footer-banner-bottom-item ul li a{
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
 }
