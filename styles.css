@@ -93,6 +93,10 @@ h3{
     align-items: center;
 }
 
+.responsive-nav{
+    display: none;
+    color: var(--link-color);
+}
 .specificaiton-list li{
     justify-content: space-around;
 }

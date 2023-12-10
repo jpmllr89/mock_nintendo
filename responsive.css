@@ -1,0 +1,12 @@
+
+@media screen and (max-width: 425px) {
+  .navbar{
+    display: none;
+  }
+  .responsive-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
