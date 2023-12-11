@@ -1,6 +1,6 @@
 
 @media screen and (max-width: 425px) {
-  .navbar{
+  .top-nav, .navbar {
     display: none;
   }
   .responsive-nav{
@@ -8,5 +8,116 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+  }
+  .responsive-nav .logo{
+    width: 100px;
+  }
+
+  .showcase-box{
+    padding: 1rem 1rem;
+    border-radius: 0px;
+  }
+
+  .panel-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-wrapper-thumbnails{
+    gap: 5px;
+  }
+  .thumbnail{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .thumbnail img{
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .pushDown{
+    margin-top: 100px;
+  }
+  .game-description, .specification-panel{
+    flex-direction: column;
+  }
+
+  .more-panel{
+    max-width: 100%;
+    overflow: scroll;
+  }
+
+  .left-panel .sub-panel{
+    display: none;
+  }
+
+  .more-panel-card{
+    width: 200px;
+  }
+  .img-wrapper.rounded{
+    width: 100%;
+  }
+  .img-wrapper{
+    width: 200px;
+  }
+  .specification-list li{
+    display:flex;
+  }
+
+  .online img{
+    display: none;
+  }
+
+  .footer-link-grid{
+    display:flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+
+  .footer-banner-bottom{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-baner-item a{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-nav, .navbar {
+    display: none;
+  }
+  .responsive-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .responsive-nav .logo{
+    width: 100px;
+  }
+
+  .panel-wrapper{
+    display:flex;
+  }
+  .img-wrapper-thumbnails{
+    gap: 5px;
+    width: 100%;
+    overflow: scroll;
+  } 
+  .thumbnail{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .thumbnail img{
+    width: 50px;
+    border-radius: 8px;
+  }
+
+  .text-block{
+    font-size:12px;
   }
 }

@@ -32,6 +32,7 @@ p{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 i{
     font-size: 28px;
@@ -95,8 +96,9 @@ h3{
 
 .responsive-nav{
     display: none;
-    color: var(--link-color);
+    background-color: var(--link-color);
 }
+
 .specificaiton-list li{
     justify-content: space-around;
 }
@@ -365,7 +367,7 @@ span.nin-switch{
     gap: 50px;
 }
 .specification-panel-item{
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
     background-color: var(--sub-text);
     flex:1;
     border-radius: 14px;
