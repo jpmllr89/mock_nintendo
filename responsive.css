@@ -26,6 +26,7 @@
   }
   .img-wrapper-thumbnails{
     gap: 5px;
+    overflow-x: scroll;
   }
   .thumbnail{
     max-width: 100%;
@@ -46,7 +47,8 @@
 
   .more-panel{
     max-width: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
+    padding: 20px 0px;
   }
 
   .left-panel .sub-panel{
@@ -83,6 +85,23 @@
   .footer-baner-item a{
     text-align: center;
   }
+  .sale-bar{
+    display: block;
+    background-color: #d8d8d8;
+  }
+
+  .sale-bar p{
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 50px;
+  }
+
+  .footer-top-banner{
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -105,7 +124,7 @@
   .img-wrapper-thumbnails{
     gap: 5px;
     width: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
   } 
   .thumbnail{
     max-width: 100%;
@@ -117,7 +136,27 @@
     border-radius: 8px;
   }
 
+  span.nin-switch {
+    font-size: 10px;
+}
+
   .text-block{
     font-size:12px;
+  }
+
+  .right-panel h2{
+    font-size: 16px;
+  }
+
+  .btn-1{
+    font-size: 16px;
+  }
+
+  .right-panel-reminder {
+    font-size: 9px;
+  }
+
+  .specification-list li{
+    align-items: flex-start;
   }
 }

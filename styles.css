@@ -171,6 +171,7 @@ h3{
     gap: 20px;
     border-radius: 12px;
     transition: 300ms;
+    align-items: center;
 }
 
 .btn-1:hover{
@@ -212,6 +213,10 @@ h3{
     align-items: center;
     /* justify-content: space-between; */
     height: 50px;
+}
+
+.sale-bar{
+    display: none;
 }
 .top-nav, .showcase-box .box-wrapper, .thumbnail,
 .footer-link-grid div ul{
