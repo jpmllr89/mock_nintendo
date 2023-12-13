@@ -102,6 +102,56 @@
     justify-content: center;
     align-items: center;
   }
+
+  footer{
+    height: 100%;
+  }
+
+  .bottom-nav-mobile{
+    background: white;
+    display:block;
+    height: 60px;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    bottom: 2%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    margin: 0 5px;
+  }
+
+  .bottom-nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 100%;
+  }
+
+  .btn-bottom-nav{
+    border: none;
+    background-color: white;
+  }
+  .pushup{
+    position: relative;
+  }
+  .btn-search{
+    color: white;
+    padding: 25px;
+    position: absolute;
+    top: -70px;
+    right: -37px;
+    border-radius: 50%;
+    background: red;
+  }
+
+  .btn-search i{
+    font-size: 30px;
+  
+  }
 }
 
 @media screen and (max-width: 768px) {
